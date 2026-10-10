@@ -3,7 +3,6 @@ import { createContext, useContext, useEffect, useState } from "react";
 const Ctx = createContext(null);
 export const useReviews = () => useContext(Ctx);
 
-// reviews = { [idFilm]: [{ id, name, rating, text, date }] }
 export function ReviewProvider({ children }) {
   const [reviews, setReviews] = useState(() => {
     try {
