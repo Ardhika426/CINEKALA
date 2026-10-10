@@ -231,7 +231,6 @@ export const GENRES = [
   "Sci-Fi",
 ];
 
-// [warna latar, warna teks, label ikon, url] — ganti url dengan link film per platform
 export const PLATFORMS = {
   "HBO MAX": ["#ffffff", "#000000", "HBO", "https://www.hbomax.com"],
   "Prime Video": ["#0f171e", "#ffffff", "prime", "https://www.primevideo.com"],
