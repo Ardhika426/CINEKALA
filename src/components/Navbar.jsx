@@ -6,14 +6,13 @@ export default function Navbar() {
   const nav = useNavigate();
   const { pathname } = useLocation();
   const [val, setVal] = useState("");
-  const [open, setOpen] = useState(false); // kotak saran pencarian
-  const [menu, setMenu] = useState(false); // menu burger
+  const [open, setOpen] = useState(false);
+  const [menu, setMenu] = useState(false);
   const key = val.trim().toLowerCase();
   const hits = key
     ? FILMS.filter((m) => m.t.toLowerCase().includes(key)).slice(0, 5)
     : [];
 
-  // tutup menu burger setiap pindah halaman
   useEffect(() => {
     setMenu(false);
   }, [pathname]);
